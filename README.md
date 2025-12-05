@@ -8,9 +8,9 @@
 
 📌 Run instruction: 
 
-   git clone https://github.com/reemzzzz/barChart-Task 
-   git install
-   npm run dev
+    git clone https://github.com/reemzzzz/barChart-Task
+    git install
+    npm run dev
 
 📌 Here are the key points of implementing this task: 
 
