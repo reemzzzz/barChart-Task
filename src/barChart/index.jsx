@@ -5,8 +5,11 @@ const BarChart = () => {
      const arr = [
       {month:"Jan",won:1,lost:2},
       {month:"Feb",won:2,lost:0},
-      {month:"March",won:1,lost:5},
-      {month:"June",won:3,lost:3},
+      {month:"Mar",won:1,lost:5},
+      {month:"Apr",won:3,lost:3},
+      {month:"May",won:4,lost:5},
+      {month:"Jun",won:7,lost:5},
+      {month:"Jul",won:4,lost:2},
   ] 
   
   const [position,setPosition] = useState({x: 0,y:0});
@@ -22,22 +25,27 @@ const BarChart = () => {
     };
   },[]);
 
+  let h = 20;
+
 
   return (
-    <div className="h-full w-full" >
+    <div className="h-full" >
       <div className="flex flex-col justify-center items-center gap-10 h-full w-full ">
-      <div className="font-bold text-xl p-4">
+      <div className="font-bold text-xl p-4 md:text-2xl lg:text-3xl ">
         Bar Chart
       </div>
-      <div className="flex flex-row  gap-6 justify-center items-end shadow-xl p-10 rounded-xl border-2 border-dashed">
+      <div className="  flex flex-row  gap-6 justify-center items-end shadow-xl p-10 rounded-xl border-2 border-dashed">
         {arr.map(item=>
         {
           return(
             <div className="">
-            <div className="flex flex-col rounded-xl overflow-hidden w-8 justify-self-center">
+            <div className="md:w-9 lg:w-10 flex flex-col rounded-xl overflow-hidden w-7 justify-self-center">
               <div 
-                className="group/item bg-green-400 text-center"
-                style={{ height: `${item.won * 30}px` }}
+                className="won-part group/item bg-green-400 text-center"
+                style={{ 
+                    height: `${item.won * h }px`,
+                     
+                 }}
               >
                 
                 <div 
@@ -52,8 +60,8 @@ const BarChart = () => {
 
               </div>
                 <div 
-                  className="group/item bg-red-400 p-2 text-center"
-                  style={{ height: `${item.lost * 30}px` }}
+                  className="lost-part group/item bg-red-400 text-center"
+                  style={{ height: `${item.lost * h}px` }}
                   >
                       <div 
                   className="fixed p-2 bg-gray-100 rounded-lg shadow-sm cursor-none invisible group-hover/item:visible"

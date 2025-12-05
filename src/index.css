@@ -11,3 +11,9 @@ html, body, #root {
   width: 100%;
   height: 100%;
 }
+
+@media (width >= 48rem) {
+  :root {
+    --x-value: 100px;
+  }
+}
