@@ -6,6 +6,9 @@
 
 **Live Demo:** [https://bar-chart-task.vercel.app/](https://bar-chart-task.vercel.app/)
 
+📌 Run instruction: 
+   npm run dev
+
 📌 Here are the key points of implementing this task: 
 
 1- Using flex columns to organize the data of each month next to each other.  
