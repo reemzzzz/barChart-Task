@@ -49,13 +49,13 @@ const BarChart = () => {
               >
                 
                 <div 
-                  className="fixed p-2 bg-gray-100 rounded-lg shadow-sm cursor-none invisible group-hover/item:visible"
+                  className="fixed p-2 border font-semibold bg-gray-100 rounded-lg shadow-sm cursor-none invisible group-hover/item:visible"
                   style={{
                     left: position.x + 2,
                     top:position.y + 2,
                   }}  
                 >
-                  {item.won}
+                  Won | {item.won}
                 </div>
 
               </div>
@@ -64,13 +64,13 @@ const BarChart = () => {
                   style={{ height: `${item.lost * h}px` }}
                   >
                       <div 
-                  className="fixed p-2 bg-gray-100 rounded-lg shadow-sm cursor-none invisible group-hover/item:visible"
+                  className="fixed font-semibold border p-2 bg-gray-100 rounded-lg shadow-sm cursor-none invisible group-hover/item:visible"
                   style={{
                     left: position.x + 2,
                     top:position.y + 2,
                   }}  
                 >
-                  {item.lost}
+                  Lost | {item.lost}
                 </div>
                </div>
               
