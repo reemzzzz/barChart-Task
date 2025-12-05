@@ -7,6 +7,9 @@
 **Live Demo:** [https://bar-chart-task.vercel.app/](https://bar-chart-task.vercel.app/)
 
 📌 Run instruction: 
+
+   git clone https://github.com/reemzzzz/barChart-Task 
+   git install
    npm run dev
 
 📌 Here are the key points of implementing this task: 
